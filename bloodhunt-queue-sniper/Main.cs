@@ -45,7 +45,6 @@ namespace bloodhunt_queue_sniper
                 Application.Exit();
                 return;
             }
-            Util.OpenBloodhuntAndOpenGameModeWindowToQueue("tdm");
 
             Instane = this;
             Bitmap BitMap = Resources.AppIcon;
