@@ -174,6 +174,13 @@ namespace bloodhunt_queue_sniper
                         Thread.Sleep(100);
                         mouse_event(MOUSEEVENTF_ABSOLUTE | MOUSEEVENTF_MOVE | MOUSEEVENTF_LEFTDOWN, x, y, 0, IntPtr.Zero);
                         mouse_event(MOUSEEVENTF_ABSOLUTE | MOUSEEVENTF_MOVE | MOUSEEVENTF_LEFTUP, x, y, 0, IntPtr.Zero);
+                    } else if (mode.Contains("tdm"))
+                    {
+                        int x = (1594 * 65535) / System.Windows.Forms.Screen.PrimaryScreen.Bounds.Width;
+                        int y = (582 * 65535) / System.Windows.Forms.Screen.PrimaryScreen.Bounds.Height;
+                        Thread.Sleep(100);
+                        mouse_event(MOUSEEVENTF_ABSOLUTE | MOUSEEVENTF_MOVE | MOUSEEVENTF_LEFTDOWN, x, y, 0, IntPtr.Zero);
+                        mouse_event(MOUSEEVENTF_ABSOLUTE | MOUSEEVENTF_MOVE | MOUSEEVENTF_LEFTUP, x, y, 0, IntPtr.Zero);
                     }
                     break;
                 }

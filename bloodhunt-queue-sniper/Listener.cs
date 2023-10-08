@@ -61,6 +61,7 @@ namespace bloodhunt_queue_sniper
                             (requestObject["gAMEMODEId"].ToString().ToLower().Contains("trio") ? "Trios" :
                             requestObject["gAMEMODEId"].ToString().ToLower().Contains("duo") ? "Duos" :
                             requestObject["gAMEMODEId"].ToString().ToLower().Contains("main") ? "Solo" :
+                            requestObject["gAMEMODEId"].ToString().ToLower().Contains("TDM") ? "TDM" :
                             requestObject["gAMEMODEId"].ToString()) : "null";
 
                             await Main.Instane.Worker.QueuePartyAsync(Main.PartyKey, gameMode);
